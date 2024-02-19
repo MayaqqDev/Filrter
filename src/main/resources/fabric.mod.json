@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "filrter",
+  "version": "${version}",
+  "name": "Filrter",
+  "description": "Allows you to filter Hoppers with nametags!",
+  "authors": [
+    "Mayaqq"
+  ],
+  "contact": {
+    "sources": "https://github.com/MayaqqDev/Filrter"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/filrter/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.mayaqq.filrter.Filrter"
+    ]
+  },
+  "mixins": [
+    "filrter.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
