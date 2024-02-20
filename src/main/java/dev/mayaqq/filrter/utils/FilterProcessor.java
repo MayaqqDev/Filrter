@@ -15,7 +15,7 @@ public class FilterProcessor {
         for (String filter : filters) {
             if (filter.startsWith("#") && stack.is(TagKey.create(BuiltInRegistries.ITEM.key(), new ResourceLocation(filter.replace("#", ""))))) {
                 return true;
-            } else if (BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().equals(filter)) {
+            } else if (BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().matches(filter)) {
                 return true;
             }
         }
